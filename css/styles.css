@@ -192,7 +192,8 @@ svg * {
 
 body {
   position: relative;
-  max-width: 1280px;
+  min-width: 1280px;
+  width: 1280px;
   margin-inline: auto;
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
