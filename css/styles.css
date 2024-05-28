@@ -238,10 +238,7 @@ header {
   flex-shrink: 0;
   margin-right: auto;
   transition-duration: 0.2s;
-}
-
-.header-logo:hover {
-  scale: 0.9;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .header-navigation-list {
@@ -261,11 +258,7 @@ header {
   white-space: nowrap;
   background-color: transparent;
   transition-duration: 0.2s;
-}
-
-.header-navigation-link:hover {
-  scale: 0.9;
-  background-color: #62213390;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .header-shop-button {
@@ -284,11 +277,6 @@ header {
   color: #FBFBFB;
   background-color: #7A3145;
   transition-duration: 0.2s;
-}
-
-.header-shop-button:hover {
-  background-color: #622133;
-  scale: 0.9;
 }
 
 /*---hero---*/
@@ -437,3 +425,161 @@ header {
   color: #FBFBFB;
   background-color: #576F35;
 }
+
+/*---vegetables---*/
+
+.vegetables-inner {
+  padding-block: 100px;
+  margin-inline: 100px;
+}
+
+.vegetables-title {
+  margin-bottom: 25px;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+}
+
+.vegetables-info {
+  margin-bottom: 50px;
+}
+
+.vegetables-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px 21px;
+}
+
+.vegetables-item {
+  padding: 32px;
+  border-radius: 40px;
+  background-color: #FBFBFB;
+}
+
+.vegetables-card-title {
+  margin-bottom: 12px;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  text-transform: lowercase;
+  color: #7A3145;
+}
+
+.vegetables-card-info {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #141414;
+}
+
+/*---reviews---*/
+
+.text-green {
+  color: #576F35;
+}
+
+.reviews {
+  background-color: #FBFBFB;
+}
+
+.reviews-inner {
+  margin-inline: 100px;
+  padding-block: 100px;
+}
+
+.reviews-title {
+  margin-bottom: 25px;
+  font-size: 64px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: #141414;
+}
+
+.reviews-info {
+  margin-bottom: 50px;
+  color: #141414;
+}
+
+.reviews-list {
+  display: flex;
+  column-gap: 25px;
+}
+
+.reviews-item {
+  min-width: 343px;
+  padding: 20px;
+  border: 1px solid #7A314530;
+  border-radius: 24px;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #141414;
+}
+
+.review-image {
+  margin-bottom: 24px;
+  border-radius: 50%;
+  background-color: #E0E0E0;
+}
+
+.review-title {
+  text-transform: capitalize;
+}
+
+.review-description {
+  line-height: 1.4;
+  text-align: center;
+  color: #14141440;
+}
+
+/*---contact form---*/
+
+/*---media---*/
+
+@media (hover: hover) {
+  .header-logo:hover {
+    scale: 0.9;
+  }
+}
+
+@media (hover: none) {
+  .header-logo:active {
+    scale: 0.9;
+  }
+}
+
+@media (hover: hover) {
+  .header-navigation-link:hover {
+    scale: 0.9;
+    background-color: #62213390;
+  }
+}
+
+@media (hover: none) {
+  .header-navigation-link:active {
+    scale: 0.9;
+    background-color: #62213390;
+  }
+}
+
+@media (hover: hover) {
+  .header-shop-button:hover {
+    background-color: #622133;
+    scale: 0.9;
+  }
+}
+
+@media (hover: none) {
+  .header-shop-button:active {
+    background-color: #622133;
+    scale: 0.9;
+  }
+}
+
