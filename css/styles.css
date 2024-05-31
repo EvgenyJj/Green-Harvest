@@ -436,7 +436,7 @@ header {
 .vegetables-title {
   margin-bottom: 25px;
   font-size: 64px;
-  line-height: 100%;
+  line-height: 1;
   letter-spacing: -0.01em;
 }
 
@@ -459,7 +459,7 @@ header {
 .vegetables-card-title {
   margin-bottom: 12px;
   font-size: 32px;
-  line-height: 100%;
+  line-height: 1;
   letter-spacing: -0.01em;
   text-transform: lowercase;
   color: #7A3145;
@@ -541,11 +541,175 @@ header {
 
 /*---contact form---*/
 
+.text-purple {
+  color: #7A3145;
+}
+
+.contact-form {
+  margin-inline: 100px;
+  padding-block: 100px;
+}
+
+.contact-form-title {
+  margin-bottom: 25px;
+  font-size: 64px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+
+.contact-form-info {
+  margin-bottom: 50px;
+}
+
+.form-social-wrapper {
+  display: flex;
+  column-gap: 24px;
+}
+
+.form-wrapper {
+  max-width: 529px;
+  padding: 50px;
+  background-color: #FBFBFB;
+  border-radius: 30px;
+}
+
+.form-title {
+  margin-bottom: 50px;
+  font-size: 24px;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  color: #141414;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.form-name-field,
+.form-email-field,
+.form-comment-field {
+  padding: 16px;
+  border: 1px solid #14141420;
+  border-radius: 30px;
+}
+
+.form-comment-field {
+  min-height: 95px;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+.form-name-field::placeholder,
+.form-email-field::placeholder,
+.form-comment-field::placeholder {
+  color: #141414;
+}
+
+.form-button {
+  padding: 16px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  background-color: #576F35;
+  color: #FBFBFB;
+  transition-duration: 0.2s;
+}
+
+.social-wrapper {
+  padding: 50px;
+  background-color: #576F35;
+  border-radius: 30px;
+}
+
+.social-image-container {
+  min-width: 427px;
+  min-height: 273px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  background-color: #14141430;
+  background-image: url("../images/3.jpg");
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-position: 20% 80%;
+}
+
+.social-title {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  color: #FBFBFB50;
+  text-transform: none;
+}
+
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 12px;
+}
+
+.social-link {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.social-item:not(:last-child)::after {
+  content: "/";
+  margin-inline: 12px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+}
+
+/*---footer---*/
+
+.footer {
+  padding-block: 50px;
+  margin-inline: 100px;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.footer-info {
+  max-width: 265px;
+}
+
 /*---media---*/
 
 @media (hover: hover) {
   .header-logo:hover {
     scale: 0.9;
+  }
+
+  .header-navigation-link:hover {
+    scale: 0.9;
+    background-color: #62213390;
+  }
+
+  .header-shop-button:hover {
+    background-color: #622133;
+    scale: 0.9;
+  }
+
+  .form-button:hover {
+    scale: 0.9;
+  }
+
+  .social-link:hover {
+    color: #622133;
   }
 }
 
@@ -553,8 +717,26 @@ header {
   .header-logo:active {
     scale: 0.9;
   }
+  .header-navigation-link:active {
+    scale: 0.9;
+    background-color: #62213390;
+  }
+
+  .header-shop-button:active {
+    background-color: #7A3145;
+    scale: 0.9;
+  }
+
+  .form-button:active {
+    scale: 0.9;
+  }
+
+  .social-link:active {
+    color: #7A3145;
+  }
 }
 
+/* 
 @media (hover: hover) {
   .header-navigation-link:hover {
     scale: 0.9;
@@ -581,5 +763,5 @@ header {
     background-color: #622133;
     scale: 0.9;
   }
-}
+} */
 
